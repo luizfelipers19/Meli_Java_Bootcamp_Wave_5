@@ -13,5 +13,7 @@ public class Main {
 
         // won't work, because the constructor differs in length
         // Pessoa pessoaTeste = new Pessoa("Pessoa teste", 27);
+
+        System.out.println(pessoa3.calcularIMC());
     }
 }

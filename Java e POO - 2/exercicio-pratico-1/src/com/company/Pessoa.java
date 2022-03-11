@@ -29,4 +29,56 @@ public class Pessoa {
         this.peso = peso;
         this.altura = altura;
     }
-}
+
+    // Exercício 5
+    public int calcularIMC(){
+        double imc = peso / Math.pow(peso, 2);
+        if(imc < 20){
+            return -1;
+        }
+        else if(20 < imc && imc < 25){
+            return 0;
+        }
+        else {
+            return 1;
+            }
+
+        }
+
+        //Exercício 6
+    public String imcLevel() {
+        switch (calcularIMC()){
+            case -1:
+                return "Abaixo do peso";
+            case 0:
+                return "Peso saudavel";
+            case 1:
+                return "Sobre peso";
+            default:
+                return null;
+        }
+    }
+
+    public boolean maiorDeIdade() {
+        return age >= 18;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", id='" + id + '\'' +
+                ", peso=" + peso +
+                ", altura=" + altura +
+                ", IMC=" + calcularIMC() +
+                ", IMC nivel=" + imcLevel() +
+                ", Maior De Idade=" + maiorDeIdade() +
+                '}';
+    }
+
+
+    }
+
+
+
