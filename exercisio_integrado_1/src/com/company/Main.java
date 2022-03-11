@@ -59,9 +59,7 @@ public class Main {
                 maior_indice = i;
             }
         }
-
-        System.out.println(cidades[menor_indice]);
-        System.out.println(cidades[maior_indice]);
+        System.out.println("A menor temperatura é de " + cidades[menor_indice] + " com " + menor + "C e a maior temperatura é de " + cidades[maior_indice] + " com " + maior + "C.");
 
     }
 
