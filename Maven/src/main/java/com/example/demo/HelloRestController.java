@@ -23,6 +23,16 @@ public class HelloRestController {
                 dezenas[(numero%100)/10] +
                 unidades[numero%10];
     }
+    @GetMapping("/morse/{morse}")
+    public String codigoMorse(@PathVariable String morse){
+        String[] alphaMorseCode = {
+                ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--",
+                "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."
+        };
+        String[] numbersMorseCode = {
+                "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----."
+        };
+    }
 
 
 }
