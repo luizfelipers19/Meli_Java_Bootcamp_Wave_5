@@ -13,7 +13,7 @@ public class Pereciveis extends Produto
     }
 
     public Pereciveis(int diasParaVencer, double price, String name){
-        super(price,name);
+        super(name,price);
         this.diasParaVencer = diasParaVencer;
     }
 
@@ -34,5 +34,14 @@ public class Pereciveis extends Produto
         }
 
         return preco;
+    }
+
+    @Override
+    public String toString() {
+        return "Pereciveis{" +
+                "diasParaVencer=" + diasParaVencer +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
