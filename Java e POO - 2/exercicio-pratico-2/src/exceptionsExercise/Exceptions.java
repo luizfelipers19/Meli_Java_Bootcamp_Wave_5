@@ -1,4 +1,4 @@
-package com.company;
+package exceptionsExercise;
 
 public class Exceptions {
 
